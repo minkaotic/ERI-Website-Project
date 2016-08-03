@@ -1,0 +1,93 @@
+/***************************************************
+Breakpoints have to be applied in the below order,
+so they can work with the cascading nature of CSS.
+***************************************************/
+
+
+/* styles for anything wider than typical smartphone landscape mode: small/medium tablets, phablets etc. */
+@media screen and (min-width: 480px) {
+
+  /*****************************************
+        TWO COLUMN LAYOUT
+  *****************************************/
+
+  #primary {
+    width: 50%;
+    float: left;
+  }
+
+  #secondary {
+    width: 40%;
+    float: right;
+  }
+
+  /*****************************************
+        PAGE: PORTFOLIO
+  ******************************************
+    Three column maths:
+    3 * 5 = 15         (% for margins)
+    100% - 15% = 85%   (available space)
+    86 / 3 = 28.3333   (space per column)
+  *****************************************/
+
+  #gallery li {
+    width: 28.3333%;
+  }
+
+  /* nth-child is a pseudo class that allows us to every nth item in a list of things */
+  #gallery li:nth-child(4n) {
+    clear: left;
+  }
+
+  /*****************************************
+        PAGE: IMMO
+  *****************************************/
+
+  .top-photo {
+    float: left;
+    margin: 0 30px 30px 0;
+  }
+}
+
+
+/* large tablets, desktop screens etc. */
+@media screen and (min-width: 660px) {
+
+  /*****************************************
+        HEADER
+    - good for demo, might not keep though!
+  *****************************************/
+
+  nav {
+    background: none;
+    float: right;
+    margin-right: 5%;
+    text-align: right;
+    width: 45%;
+  }
+
+  #logo {
+    float:left;
+    margin-left: 5%;
+    text-align: left;
+    width: 45%;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+
+  header {
+    border-bottom: 5px solid #599a68;
+    margin-bottom: 60px;
+  }
+}

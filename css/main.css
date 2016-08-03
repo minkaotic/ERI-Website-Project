@@ -1,0 +1,248 @@
+/***************************************************
+MARGINS/PADDING: Whenever two values are provided
+rather than 4, the first one refers to top+bottom,
+and the second one to left+right
+***************************************************/
+
+
+/*********************************
+       GENERAL
+*********************************/
+
+body {
+  font-family: 'Muli', sans-serif;
+  font-weight: normal;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;  /* centre and auto-adjust */
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;  /* shrink images relative to screen size */
+}
+
+/* page headlines */
+h3 {
+  margin: 0 0 1em 0;  /* ensure suitable gap to main text */
+  font-size: 1.7em;
+}
+
+
+
+/*********************************
+        HEADING
+*********************************/
+
+header {
+  float: left;
+  margin: 0 0 30px 0;  /* create space between header and main part */
+  padding: 0px 0 0 0;
+  width: 100%;  /* explicitely specify width whenever using floats to avoid surprises */
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Nunito', sans-serif;
+  margin: 15px 0;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.3em;
+  margin: 1px 0;
+  font-weight: normal;
+}
+
+h4 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.1em;
+  margin: 1px 0;
+  font-weight: normal;
+}
+
+
+
+/*********************************
+        NAVIGATION
+*********************************/
+
+nav {
+  text-align: center;
+  padding: 15px 0;
+  margin: 20px 0 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;  /* display items next to each other, rather than each in a new line */
+}
+
+nav a {
+  font-family: Nunito;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 15px 10px;
+}
+
+
+
+/*********************************
+        FOOTER
+*********************************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;  /* prevent spillover of float from main part of page */
+  padding-top: 50px;
+  color: #ccc;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+
+
+/*********************************
+        PAGE: PORTFOLIO
+*********************************/
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;  /* remove bullet points */
+}
+
+#gallery li {
+  float: left;
+  width: 45%;  /* to make two columns */
+  margin: 2.5%;  /* per column per side, using the remaining 10% */
+  background-color: #f5f5f5;
+}
+
+#gallery li a p {
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+  color: gray;
+}
+
+
+
+/*********************************
+        PAGE: IMMO
+*********************************/
+
+.top-photo {
+  display: block;  /* By default, images are displayed inline, like text. One way of centering them is to  hence treat them like text, and use 'text-align: center'. However, in this case we're turning the image into a block item instead, and centering it with the margin property. This provides more flexibility going forward.*/
+  max-width: 200px;
+  margin: 0 auto 30px;
+  border-radius: 100%;  /* rounds corners - or go crazy and just make it a totally circular shape */
+}
+
+
+
+/*********************************
+        PAGE: KONTAKT
+*********************************/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 30px;
+  background-repeat: no-repeat;  /* background images repeat by default */
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;  /* padding between text and images */
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/phone.png');
+
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail.png');
+
+}
+
+.contact-info li.twitter a {
+  background-image: url('../img/twitter.png');
+
+}
+
+
+/*********************************
+        COLORS
+*********************************/
+
+/* site body */
+body {
+  background-color: #fff;
+  color: #999;
+}
+
+/* green header */
+header {
+  background: #6ab47b;
+  border-color: #599a68;
+}
+
+/* nav background on mobile */
+nav {
+  background-color: #599a68;
+}
+
+/* logo text */
+h1, h2 {
+  color: #fff;
+}
+h4 {
+  color: teal;
+}
+
+/* page headlines */
+h3 {
+  color: darkslategray;
+}
+
+/* links */
+a {
+  color: #6ab47b;
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color: #fff;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color: #32673f;
+}
